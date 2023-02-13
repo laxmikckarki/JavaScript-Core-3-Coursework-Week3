@@ -70,3 +70,22 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+//Task 1
+hogwarts.filter(obj => {
+let {house} = obj;
+  return house === "Gryffindor";
+  }).forEach(obj => {
+let {firstName, lastName} = obj
+console.log(`${firstName} ${lastName}`);
+});
+
+// task 2 
+
+hogwarts.filter(obj => {
+  let {pet, occupation} = obj;
+  return teacher.pet !== null && occupation === "Teacher"; 
+}).forEach(obj => { 
+  let {firstName, lastName} = obj;
+  console.log(`${firstName} ${lastName}`);
+});

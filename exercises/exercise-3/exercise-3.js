@@ -6,3 +6,9 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+let total = 0;
+for (let {itemName: Item, quantity: num, unitPrice: Price} of order){
+  console.log(`${num} ${Item} ${Price * num}`);
+  total = total + Price * num;
+}
+console.log(`Total:${total}`);

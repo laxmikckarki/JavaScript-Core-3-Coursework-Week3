@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+//one is global variable and the another is local variable.
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+//value of x is 10 but y is undifined outside the function, it gives an error.
 
 ## Question 3
 
@@ -62,3 +64,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+//the output of variable x is still 9 because x has global scope not function scope and it wouldn't be incremented. However, the last console.log will change the value of the object because we are passing an argument as reference(since it is object), so it can be modified by function.
